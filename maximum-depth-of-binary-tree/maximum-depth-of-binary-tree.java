@@ -15,20 +15,15 @@
  */
 
 class Solution {
-
-  private int longestDepth = 0;
+  
   public int maxDepth(TreeNode root) {
-    dfs(root, 0);
-    return longestDepth;
+    return dfs(root, 0);
   }
 
-  private void dfs(TreeNode node, int depth) {
+  private int dfs(TreeNode node, int depth) {
     if (node == null) {
-      return;
+      return depth;
     }
-    depth += 1;
-    longestDepth = Math.max(longestDepth, depth);
-    dfs(node.left, depth);
-    dfs(node.right, depth);
+    return Math.max(dfs(node.left, depth + 1), dfs(node.right, depth + 1));
   }
 }
