@@ -13,3 +13,8 @@ LeetCode study
 ### 7월 12일 ~ 7월 18일
 - [X] [338. Counting Bits](https://github.com/sangwoo0727/LeetCode/tree/main/counting-bits)
 - [X] [104. Maximum Depth of Binary Tree](https://github.com/sangwoo0727/LeetCode/tree/main/maximum-depth-of-binary-tree)
+
+### 7월 19일 ~ 7월 25일
+- [X] [46. Permutations](https://github.com/sangwoo0727/LeetCode/tree/main/permutations)
+- [X] [226. Invert Binary Tree](https://github.com/sangwoo0727/LeetCode/tree/main/invert-binary-tree)
+
