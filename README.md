@@ -18,3 +18,6 @@ LeetCode study
 - [X] [46. Permutations](https://github.com/sangwoo0727/LeetCode/tree/main/permutations)
 - [X] [226. Invert Binary Tree](https://github.com/sangwoo0727/LeetCode/tree/main/invert-binary-tree)
 
+### 7월 26일 ~ 8월 1일
+- [X] [94. Binary Tree Inorder Traversal](https://github.com/sangwoo0727/LeetCode/tree/main/binary-tree-inorder-traversal)
+- [X] [136. Single Number](https://github.com/sangwoo0727/LeetCode/tree/main/single-number)
