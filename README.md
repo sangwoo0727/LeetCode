@@ -2,7 +2,7 @@
 LeetCode study
 
 ## Problems
-* [🔥 Top 100 Liked Questions](https://leetcode.com/problemset/all/?listId=79h8rn6)
+* [🔥 Top 100 Liked Questions - Acceptance 높은순서](https://leetcode.com/problemset/all/?listId=79h8rn6&sort=DESCENDING&order=AC_RATE)
 
 ## Schedules
 
