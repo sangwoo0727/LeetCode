@@ -15,18 +15,23 @@
  */
 class Solution {
 
+  private final Deque<TreeNode> stack = new ArrayDeque<>();
+  private final List<Integer> answer = new ArrayList<>();
+
   public List<Integer> inorderTraversal(TreeNode root) {
-    List<Integer> inorders = new ArrayList<>();
-    inorder(root, inorders);
-    return inorders;
+    inorder(root);
+    return answer;
   }
 
-  private void inorder(TreeNode node, List<Integer> inorders) {
-    if (node == null) {
-      return;
+  private void inorder(TreeNode node) {
+    while (node != null || !stack.isEmpty()) {
+      while (node != null) {
+        stack.addLast(node);
+        node = node.left;
+      }
+      node = stack.pollLast();
+      answer.add(node.val);
+      node = node.right;
     }
-    inorder(node.left, inorders);
-    inorders.add(node.val);
-    inorder(node.right, inorders);
   }
 }
