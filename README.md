@@ -21,3 +21,9 @@ LeetCode study
 ### 7월 26일 ~ 8월 1일
 - [X] [94. Binary Tree Inorder Traversal](https://github.com/sangwoo0727/LeetCode/tree/main/binary-tree-inorder-traversal)
 - [X] [136. Single Number](https://github.com/sangwoo0727/LeetCode/tree/main/single-number)
+
+### 8월 2일 ~ 8월 8일
+- [X] [22. Generate Parentheses](https://github.com/sangwoo0727/LeetCode/tree/main/generate-parentheses)
+- [X] [78. Subsets](https://github.com/sangwoo0727/LeetCode/tree/main/subsets)
+
+
