@@ -1,3 +1,4 @@
+
 class Solution {
 
   private int[] answer;
@@ -13,19 +14,18 @@ class Solution {
   }
 
   private Solution findWarmerTemps(int[] temps) {
-    Deque<Pair> stack = new ArrayDeque<>();
+    Deque<Integer> stack = new ArrayDeque<>();
     for (int idx = temps.length - 1; idx >= 0; idx--) {
       int temp = temps[idx];
-      while (!stack.isEmpty() && temp >= stack.peekLast().getTemp()) {
+      while (!stack.isEmpty() && temp >= temps[stack.peekLast()]) {
         stack.pollLast();
       }
       if (stack.isEmpty()) {
         answer[idx] = 0;
       } else {
-        Pair next = stack.peekLast();
-        answer[idx] = next.getIdx() - idx;
+        answer[idx] = stack.peekLast() - idx;
       }
-      stack.addLast(new Pair(temp, idx));
+      stack.addLast(idx);
     }
     return this;
   }
@@ -33,23 +33,5 @@ class Solution {
   private Solution initStore(int size) {
     answer = new int[size];
     return this;
-  }
-}
-
-class Pair {
-  private int temp;
-  private int idx;
-
-  public Pair(int temp, int idx) {
-    this.temp = temp;
-    this.idx = idx;
-  }
-
-  public int getIdx() {
-    return idx;
-  }
-
-  public int getTemp() {
-    return temp;
   }
 }
