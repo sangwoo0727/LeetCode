@@ -26,4 +26,6 @@ LeetCode study
 - [X] [22. Generate Parentheses](https://github.com/sangwoo0727/LeetCode/tree/main/generate-parentheses)
 - [X] [78. Subsets](https://github.com/sangwoo0727/LeetCode/tree/main/subsets)
 
-
+### 8월 9일 ~ 8월 15일
+- [X] [739. Daily Temperatures](https://github.com/sangwoo0727/LeetCode/tree/main/daily-temperatures)
+- [X] [206. Reverse Linked List](https://github.com/sangwoo0727/LeetCode/tree/main/reverse-linked-list)
