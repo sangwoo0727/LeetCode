@@ -13,7 +13,7 @@ class Solution {
   private void findPalindrome(String s) {
     for (int j = 0; j < len; j++) {
       for (int i = j; i >= 0; i--) {
-        if (isPalindrome(i, j, s, dp)) {
+        if (isPalindrome(i, j, s)) {
           dp[i][j] = true;
           answer++;
         }
@@ -26,7 +26,7 @@ class Solution {
     dp = new boolean[len][len];
   }
 
-  private boolean isPalindrome(int i, int j, String s, boolean[][] dp) {
+  private boolean isPalindrome(int i, int j, String s) {
     if (i == j) {
       return true;
     }
