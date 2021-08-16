@@ -29,3 +29,7 @@ LeetCode study
 ### 8월 9일 ~ 8월 15일
 - [X] [739. Daily Temperatures](https://github.com/sangwoo0727/LeetCode/tree/main/daily-temperatures)
 - [X] [206. Reverse Linked List](https://github.com/sangwoo0727/LeetCode/tree/main/reverse-linked-list)
+
+### 8월 16일 ~ 8월 22일
+- [X] [647. Palindromic Substrings](https://github.com/sangwoo0727/LeetCode/tree/main/palindromic-substrings)
+- [X] [230. Kth Smallest Element in a BST](https://github.com/sangwoo0727/LeetCode/tree/main/kth-smallest-element-in-a-bst)
