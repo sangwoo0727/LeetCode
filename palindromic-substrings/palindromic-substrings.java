@@ -33,9 +33,8 @@ class Solution {
     if (s.charAt(i) != s.charAt(j)) {
       return false;
     }
-    if (j - i - 1 < 0) {
-      return false;
-    } else if (j - i - 1 == 0) {
+    
+    if (j - i - 1 == 0) {
       return true;
     } else {
       return dp[i + 1][j - 1];
