@@ -1,7 +1,7 @@
 class Solution {
 
   private Map<Integer, Integer> countMap;
-  private List<Integer>[] lists;
+  private List<List<Integer>> lists;
 
   public int[] topKFrequent(int[] nums, int k) {
     return this.init(nums)
@@ -9,15 +9,12 @@ class Solution {
         .sortMapDatas()
         .getTopElements(k);
   }
-  
+
   private int[] getTopElements(int k) {
     int[] answer = new int[k];
     int idx = 0;
-    for (int i = lists.length - 1; i >= 0; i--) {
-      if (lists[i] == null) {
-        continue;
-      }
-      for (int num : lists[i]) {
+    for (int i = lists.size() - 1; i >= 0; i--) {
+      for (int num : lists.get(i)) {
         if (idx < k) {
           answer[idx++] = num;
         }
@@ -29,10 +26,7 @@ class Solution {
   private Solution sortMapDatas() {
     for (int num : countMap.keySet()) {
       int count = countMap.get(num);
-      if (lists[count] == null) {
-        lists[count] = new ArrayList<>();
-      }
-      lists[count].add(num);
+      lists.get(count).add(num);
     }
     return this;
   }
@@ -46,7 +40,10 @@ class Solution {
 
   private Solution init(int[] nums) {
     countMap = new HashMap<>();
-    lists = new List[nums.length + 1];
+    lists = new ArrayList<>();
+    for (int i = 0; i <= nums.length; i++) {
+      lists.add(new ArrayList<>());
+    }
     return this;
   }
 }
