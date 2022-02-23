@@ -12,7 +12,7 @@ class Solution {
         return true;
       }
       if (set.contains(sum)) {
-          return false;
+        return false;
       }
       set.add(sum);
       n = sum;
