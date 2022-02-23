@@ -23,7 +23,7 @@ class Solution {
     return lists[0];
   }
 
-  ListNode merge(ListNode l1, ListNode l2) {
+  private ListNode merge(ListNode l1, ListNode l2) {
     ListNode head = new ListNode();
     ListNode cur = head;
     while (l1 != null && l2 != null) {
